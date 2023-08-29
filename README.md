@@ -1,3 +1,3 @@
 # WebsiteFramework_Dev
 
-Run the file "/album-rtl/index.html"
+Run the file "index.html"
