@@ -1,0 +1,3050 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+   <head>
+      <script src="../assets/js/color-modes.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Devath A Bhandary">
+      <meta name="generator" content="Hugo 0.115.4">
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+      <!-- Add this before the closing </head> tag -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!-- Add this before the closing </body> tag -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+      <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+         .custom-wide-button {
+         width: 150px; /* Adjust the width as per your preference */
+         }
+         .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         user-select: none;
+         }
+         @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+         }
+         }
+         .b-example-divider {
+         width: 100%;
+         height: 3rem;
+         background-color: rgba(0, 0, 0, .1);
+         border: solid rgba(0, 0, 0, .15);
+         border-width: 1px 0;
+         box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+         }
+         .contact-info {
+         text-align: left;
+         }
+         .contact-info ul {
+         padding-left: 0;
+         }
+         .contact-info li {
+         list-style: none;
+         }
+         .b-example-vr {
+         flex-shrink: 0;
+         width: 1.5rem;
+         height: 100vh;
+         }
+         .bi {
+         vertical-align: -.125em;
+         fill: currentColor;
+         }
+         .nav-scroller {
+         position: relative;
+         z-index: 2;
+         height: 2.75rem;
+         overflow-y: hidden;
+         }
+         .nav-scroller .nav {
+         display: flex;
+         flex-wrap: nowrap;
+         padding-bottom: 1rem;
+         margin-top: -1px;
+         overflow-x: auto;
+         text-align: center;
+         white-space: nowrap;
+         -webkit-overflow-scrolling: touch;
+         }
+         .card-text {
+         margin-bottom: 2px;
+         }
+         .btn-bd-primary {
+         bd-violet-bg: #712cf9;
+         bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+         bs-btn-font-weight: 600;
+         bs-btn-color: var(--bs-white);
+         bs-btn-bg: var(--bd-violet-bg);
+         bs-btn-border-color: var(--bd-violet-bg);
+         bs-btn-hover-color: var(--bs-white);
+         bs-btn-hover-bg: #6528e0;
+         bs-btn-hover-border-color: #6528e0;
+         bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+         bs-btn-active-color: var(--bs-btn-hover-color);
+         bs-btn-active-bg: #5a23c8;
+         bs-btn-active-border-color: #5a23c8;
+         }
+         .bd-mode-toggle {
+         z-index: 1500;
+         .darkbox {
+         background-color: #666; /* Dark background color */
+         color: #fff; /* Text color */
+         padding: 20px; /* Add some padding around the text for better readability */
+         }.darkbox {
+         background-color: black;
+         padding: 10px;
+         border-radius: 5px;
+         }
+         .rainbow-text {
+         font-size: inherit;
+         background-image: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080);
+         background-clip: text;
+         webkit-background-clip: text;
+         color: transparent;
+         display: inline;
+         }
+         }
+      </style>
+      <script>
+         // When the modal is shown, set the enlarged image source
+         $('#enlargedImageModal').on('show.bs.modal', function () {
+           var originalImageSrc = $('#shirtImage').attr('src');
+           $('#enlargedShirtImage').attr('src', originalImageSrc);
+         })
+         ;
+      </script>
+   </head>
+   <body>
+    
+       
+               </footer>
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="py-5 text-center container" style="margin-top: -90px; background-image: url('file:///C:/Users/INDIRA%20KULAI/OneDrive/Desktop/Devatha/bootstrap-5.3.1-examples/album/All%20shirts%20background.jpeg'); background-size: cover; background-position: center;">
+            <div class="row py-lg-5">
+               <div class="col-lg-6 col-md-8 mx-auto">
+                  <d
+                  <div class="darkbox">
+                     <h1 class="fw-dark rainbow-text" style="font-size: 75px;">Wholesale Distributors</h1>
+                     <h1 class="fw-dark rainbow-text" style="font-size: 25px;">Plain T-shirts, Printed T-shirts, Cloth Materials</h1>
+                  </div>
+                  <p>
+                     <a href="mailto:devath@outlook.in" class="btn btn-primary my-2">Email: devath@outlook</a>
+                     <a href="https://api.whatsapp.com/send?phone=919902385510" class="btn btn-primary my-2">Whatsapp: +91 9902385510</a>
+                     <a href="tel:+919902385510" class="btn btn-primary my-2">Phone: +91 9902385510</a>
+                  </p>
+               </div>
+            </div>
+         </section>
+         <div class="album py-5 bg-body-tertiary" style="margin-top: -110px;">
+         <div class="container">
+         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage3">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage4">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage5">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage6">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage7">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage8">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		 
+		 
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal10">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal10" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel10" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage10">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal11">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal11" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel11" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage11">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal12">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal12" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel12" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage12">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal13">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal13" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel13" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage13">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal14">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal14" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel14" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage14">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal15">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal15" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel15" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage15">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane T Shirt in various colours.</p>
+                  <p class="card-text">INR ₹90</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="C:\Users\INDIRA KULAI\OneDrive\Desktop\Devatha\bootstrap-5.3.1-examples\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="text-body-secondary py-5">
+         <div class="container">
+            <p class="float-end mb-1">
+               <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Email : devath@outlook.in</p>
+            <p class="mb-0">Contact : +91 990285510 </p>
+         </div>
+      </footer>
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
