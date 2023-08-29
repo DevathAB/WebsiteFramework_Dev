@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+   <head>
+      <script src="./assets/js/color-modes.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Devath A Bhandary">
+      <meta name="generator" content="Hugo 0.115.4">
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+      <!-- Add this before the closing </head> tag -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!-- Add this before the closing </body> tag -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+      <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+	  .btn-link {
+  display: inline-block; /* Make the link inline */
+  margin-right: 500px;    /* Adjust the right margin for spacing */
+}
+
+         .custom-wide-button {
+         width: 150px; /* Adjust the width as per your preference */
+         }
+         .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         user-select: none;
+         }
+         @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+         }
+         }
+         .b-example-divider {
+         width: 100%;
+         height: 3rem;
+         background-color: rgba(0, 0, 0, .1);
+         border: solid rgba(0, 0, 0, .15);
+         border-width: 1px 0;
+         box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+         }
+         .contact-info {
+         text-align: left;
+         }
+         .contact-info ul {
+         padding-left: 0;
+         }
+         .contact-info li {
+         list-style: none;
+         }
+         .b-example-vr {
+         flex-shrink: 0;
+         width: 1.5rem;
+         height: 100vh;
+         }
+         .bi {
+         vertical-align: -.125em;
+         fill: currentColor;
+         }
+         .nav-scroller {
+         position: relative;
+         z-index: 2;
+         height: 2.75rem;
+         overflow-y: hidden;
+         }
+         .nav-scroller .nav {
+         display: flex;
+         flex-wrap: nowrap;
+         padding-bottom: 1rem;
+         margin-top: -1px;
+         overflow-x: auto;
+         text-align: center;
+         white-space: nowrap;
+         -webkit-overflow-scrolling: touch;
+         }
+         .card-text {
+         margin-bottom: 2px;
+         }
+         .btn-bd-primary {
+         bd-violet-bg: #712cf9;
+         bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+         bs-btn-font-weight: 600;
+         bs-btn-color: var(--bs-white);
+         bs-btn-bg: var(--bd-violet-bg);
+         bs-btn-border-color: var(--bd-violet-bg);
+         bs-btn-hover-color: var(--bs-white);
+         bs-btn-hover-bg: #6528e0;
+         bs-btn-hover-border-color: #6528e0;
+         bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+         bs-btn-active-color: var(--bs-btn-hover-color);
+         bs-btn-active-bg: #5a23c8;
+         bs-btn-active-border-color: #5a23c8;
+         }
+         .bd-mode-toggle {
+         z-index: 1500;
+         .darkbox {
+         background-color: #666; /* Dark background color */
+         color: #fff; /* Text color */
+         padding: 20px; /* Add some padding around the text for better readability */
+         }.darkbox {
+         background-color: black;
+         padding: 10px;
+         border-radius: 5px;
+         }
+         .rainbow-text {
+         font-size: inherit;
+         background-image: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080);
+         background-clip: text;
+         webkit-background-clip: text;
+         color: transparent;
+         display: inline;
+         }
+		 /* Small devices (phones) */
+@media (max-width: 576px) {
+    /* Adjust styles for small screens */
+    /* For example, make the header text smaller or adjust margins */
+    .darkbox h1 {
+        font-size: 40px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Adjust styles for medium screens */
+    /* For example, change the number of columns in the card grid */
+    .row-cols-md-3 {
+        column-count: 2;
+    }
+}
+
+         }
+      </style>
+      <script>
+         // When the modal is shown, set the enlarged image source
+         $('#enlargedImageModal').on('show.bs.modal', function () {
+           var originalImageSrc = $('#shirtImage').attr('src');
+           $('#enlargedShirtImage').attr('src', originalImageSrc);
+         })
+         ;
+      </script>
+   </head>
+   <body>
+      <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+         <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+         </symbol>
+         <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+         </symbol>
+         <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+         </symbol>
+         <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+         </symbol>
+      </svg>
+      <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+         <button class="btn btn-bd-primary btn-light py-2 dropdown-toggle d-flex align-items-center"
+            id="bd-theme"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="2em" height="2em">
+               <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+               <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="2em" height="2em">
+                     <use href="#sun-fill"></use>
+                  </svg>
+                  Light
+                  <svg class="bi ms-auto d-none" width="2em" height="2em">
+                     <use href="#check2"></use>
+                  </svg>
+               </button>
+            </li>
+            <li>
+               <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="2em" height="2em">
+                     <use href="#moon-stars-fill"></use>
+                  </svg>
+                  Dark
+                  <svg class="bi ms-auto d-none" width="2em" height="2em">
+                     <use href="#check2"></use>
+                  </svg>
+               </button>
+            </li>
+         </ul>
+      </div>
+      <header data-bs-theme="light">
+         <div class="collapse text-bg-light" id="navbarHeader">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-8 col-md-7 py-4">
+                     <h4>About</h4>
+                     <p class="text-body-secondary">Our expertise lies in delivering top-quality products at unbeatable prices. With just a click of a button, you can effortlessly find the best product available at the most competitive price.</p>
+                  </div>
+                  <div class="col-sm-4 offset-md-1 py-4">
+                     <h5>Get it imorted from India</h5>
+                     <h5>Get delivered domestically</h5>
+                     <h5>Get product customized and more...</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+               <a href="#" class="navbar-brand d-flex align-items-center">
+                  <path d="M7 9l3 3 3-3" />
+                  <path d="M7 15h10" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                     <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                  </svg>
+                  </svg>
+                  <strong>Import it from INDIA,talk to our representative at </strong>
+                  <footer class="text-body-secondary py-5">
+                     <div class="container">
+                        <p class="float-end mb-1">
+                        </p>
+                        <div class="contact-info">
+                           <ul class="list-unstyled">
+                              <li>
+               <a href="mailto:devath@outlook.in" class="text-white">Email:devath@outlook.in</a></li>
+               <li><a href="https://api.whatsapp.com/send?phone=919902385510" class="text-white">Phone/Whatsapp: +91 9902385510</a></li>
+               </ul>
+               </div>
+               </div>
+               </footer>
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+            </div>
+			 
+         </div>
+		
+      </header>
+      <main>
+         <section class="py-5 text-center container" style="margin-top: -90px; background-size: cover; background-position: center;">
+            <div class="row py-lg-5">
+               <div class="col-lg-6 col-md-8 mx-auto">
+                  <d>
+				
+
+				  
+                  <div class="darkbox">
+				    
+                     <h1 class="fw-dark rainbow-text" style="font-size: 75px;">Wholesale Distributors</h1>
+                     <h1 class="fw-dark rainbow-text" style="font-size: 25px;">Plain T-shirts, Printed T-shirts, Cloth Materials</h1>
+                  </div>
+                  <p>
+                     <a href="mailto:devath@outlook.in" class="btn btn-primary my-2">Email: devath@outlook.in</a>
+                     <a href="https://api.whatsapp.com/send?phone=919902385510" class="btn btn-primary my-2">Whatsapp: +91 9902385510</a>
+                     <a href="tel:+919902385510" class="btn btn-primary my-2">Phone: +91 9902385510</a>
+                  </p>
+               </div>
+			 
+            </div>
+         </section>
+         <div class="album py-5 bg-body-tertiary" style="margin-top: -110px;">
+         <div class="container">
+         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="./album/White plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane White T Shirt</p>
+                  <p class="card-text">INR ₹89</p>
+                  <p class="card-text">USD $4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal1">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal1" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="White plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage1">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\Purple T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Blue T Shirt.</p>
+                  <p class="card-text">INR ₹110</p>
+                  <p class="card-text">USD $6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal2">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal2" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\Purple T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage2">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\Navy bule T shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Light Blue T Shirt.</p>
+                  <p class="card-text">INR ₹130</p>
+                  <p class="card-text">USD $6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal3">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal3" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\Navy bule T shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage3">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\yellow plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Yellow T Shirt </p>
+                  <p class="card-text">INR ₹120</p>
+                  <p class="card-text">USD $5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal4">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal4" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\yellow plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage4">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\skin plane t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Light Brown T Shirt</p>
+                  <p class="card-text">INR ₹130</p>
+                  <p class="card-text">USD $6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal5">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal5" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\skin plane t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage5">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\Black plane T.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Black T Shirt</p>
+                  <p class="card-text">INR ₹110</p>
+                  <p class="card-text">USD $5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal6">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal6" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\Black plane T.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage6">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\red t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane Dark Green T Shirt</p>
+                  <p class="card-text">INR ₹130</p>
+                  <p class="card-text">USD $6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal7">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal7" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\red t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage7">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\Blue t shirt.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane Dark Blue T Shirt.</p>
+                  <p class="card-text">INR ₹115</p>
+                  <p class="card-text">USD $5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal8">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal8" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\Blue t shirt.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage8">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\peach t.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane Ligh Green T Shirt.</p>
+                  <p class="card-text">INR ₹130</p>
+                  <p class="card-text">USD $6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal9">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal9" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\peach t.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage9">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		 
+		 
+		 
+		   <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\pink10.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage1">
+               <div class="card-body">
+                  <p class="card-text">Plane Light Pink T Shirt.</p>
+                  <p class="card-text">INR ₹130</p>
+                  <p class="card-text">USD $6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal10">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal10" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel10" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\pink10.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage10">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\green11.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Green Leaf shade T Shirt.</p>
+                  <p class="card-text">INR ₹120</p>
+                  <p class="card-text">USD $5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal11">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal11" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel11" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\green11.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage11">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\grey12.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Grey T Shirt.</p>
+                  <p class="card-text">INR ₹115</p>
+                  <p class="card-text">USD $6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal12">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal12" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel12" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\grey12.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage12">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\blueberry13.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Maroon T Shirt.</p>
+                  <p class="card-text">INR ₹110</p>
+                  <p class="card-text">USD $5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal13">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal13" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel13" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\blueberry13.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage13">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\brwn14.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Dark Brown T Shirt.</p>
+                  <p class="card-text">INR ₹110</p>
+                  <p class="card-text">USD $5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal14">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal14" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel14" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\brwn14.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage14">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\red15.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage2">
+               <div class="card-body">
+                  <p class="card-text">Plane Red T Shirt.</p>
+                  <p class="card-text">INR ₹115</p>
+                  <p class="card-text">USD $5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal15">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal15" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel15" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\red15.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage15">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\orng16.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane Orange T Shirt.</p>
+                  <p class="card-text">INR ₹135</p>
+                  <p class="card-text">USD $7</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal16">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal16" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\orng16.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage16">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\17yl.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane Lime Green T Shirt.</p>
+                  <p class="card-text">INR ₹135</p>
+                  <p class="card-text">USD $7</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal17">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal17" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\17yl.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage17">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm">
+               <img src="..\album\blu18.jpeg" alt="Image" width="100%" height="400" class="img-fluid" id="shirtImage">
+               <div class="card-body">
+                  <p class="card-text">Plane Purple T Shirt.</p>
+                  <p class="card-text">INR ₹130</p>
+                  <p class="card-text">USD $7</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-primary custom-wide-button" data-toggle="modal" data-target="#enlargedImageModal18">View</button>
+                     </div>
+                     <small class="text-body-secondary">*Price may vary slightly</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for enlarged image -->
+         <div class="modal fade" id="enlargedImageModal18" tabindex="-1" role="dialog" aria-labelledby="enlargedImageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <img src="..\album\blu18.jpeg" alt="Image" class="img-fluid" id="enlargedShirtImage18">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+		 
+      </main>
+      <footer class="text-body-secondary py-5">
+         <div class="container">
+            <p class="float-end mb-1">
+               <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Email : devath@outlook.in</p>
+            <p class="mb-0">Contact : +91 9902385510 </p>
+         </div>
+      </footer>
+      <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
